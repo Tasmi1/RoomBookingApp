@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        style="@style/ScrollViewStyle"
+        >
+
+        <LinearLayout
+            style="@style/LinearLayoutStyle"
+            >
+
+    <TextView
+       style="@style/TextViewStyle"
+        android:id="@+id/tvHotelBook"
+        android:text="Hotel Advisor"
+
+        android:textSize="35dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp"
+        />
+
+    <TextView
+      style="@style/TextViewStyle"
+        android:textSize="20dp"
+        android:text="Select Location"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <Spinner
+       style="@style/SpinnerStyle"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/spinLocation"
+        />
+
+    <TextView
+       style="@style/TextViewStyle"
+        android:textSize="20dp"
+        android:text="Select Room Type"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <Spinner
+       style="@style/SpinnerStyle"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/spinRoomType"
+        />
+
+    <Button
+        android:id="@+id/simpledatepicker1"
+      style="@style/ButtonStyle"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="18dp"
+        android:text="Check In date" />
+
+
+            <Button
+        android:id="@+id/simpledatepicker2"
+                style="@style/ButtonStyle"
+        android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+        android:textSize="18dp"
+        android:layout_marginLeft="20dp"
+        android:text="check out date" />
+
+
+
+
+    <LinearLayout
+       style="@style/LinearLayoutStyle"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:padding="5dp">
+
+
+        <TextView
+           style="@style/TextViewStyle"
+            android:layout_weight="1"
+            android:text="Adults "
+            android:textColor="#060D31"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+          style="@style/TextViewStyle"
+            android:layout_weight="1"
+            android:textColor="#060D31"
+            android:text="Children "
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            style="@style/TextViewStyle"
+            android:layout_weight="1"
+            android:textColor="#060D31"
+            android:text="Room "
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        >
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Adults"
+            android:id="@+id/etAdults"
+            android:textAlignment="center"
+            android:inputType="number"
+            />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:inputType="number"
+            android:id="@+id/etChildren"
+            android:hint="Childrens"
+            />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Rooms"
+            android:id="@+id/etRoom"
+            android:inputType="number"
+            android:textAlignment="center"
+            />
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/btnCalculate"
+        style="@style/ButtonStyle"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:background="#14247C"
+        android:textColor="#fff"
+        android:text="BOOK"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        />
+            <TextView
+                android:id="@+id/tverror"
+                style="@style/TextViewStyle"
+                android:textColor="#F1060E"
+                android:textAlignment="center"
+                android:textSize="15dp" />
+
+            <TextView
+                style="@style/TextViewStyle"
+                android:text="Your Booking Details : "
+                android:textSize="25dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold|normal"
+                />
+
+            <TextView
+                style="@style/TextViewStyle"
+            android:id="@+id/tvLocation"
+            android:textSize="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            style="@style/TextViewStyle"
+            android:id="@+id/tvRoomType"
+            android:textSize="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            />
+
+            <TextView
+                android:id="@+id/tvindate"
+                style="@style/TextViewStyle"
+                android:textSize="20dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:id="@+id/tvoutdate"
+                style="@style/TextViewStyle"
+                android:textSize="20dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="5dp"
+                 />
+
+        <TextView
+            style="@style/TextViewStyle"
+            android:id="@+id/tvAdults"
+            android:textSize="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            style="@style/TextViewStyle"
+            android:id="@+id/tvChildren"
+            android:textSize="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            style="@style/TextViewStyle"
+            android:id="@+id/tvRoom"
+            android:textSize="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            />
+
+            <TextView
+                style="@style/TextViewStyle"
+                android:id="@+id/tvDays"
+                android:textSize="20dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                style="@style/TextViewStyle"
+                android:id="@+id/tvTotal"
+                android:textSize="20dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="5dp"
+                />
+
+        <TextView
+            style="@style/TextViewStyle"
+            android:id="@+id/tvService"
+            android:textSize="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            style="@style/TextViewStyle"
+            android:id="@+id/tvTax"
+            android:textSize="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp"
+            />
+
+            <TextView
+                style="@style/TextViewStyle"
+                android:text="Please visit us again!.."
+                android:textSize="20dp"
+                android:textStyle="normal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>
